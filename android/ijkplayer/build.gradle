@@ -3,6 +3,7 @@
 buildscript {
     repositories {
         jcenter()
+        maven { url 'https://maven.google.com' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.1.3'
@@ -17,14 +18,17 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven { url 'https://maven.google.com' }
     }
 }
 
 ext {
     compileSdkVersion = 25
     buildToolsVersion = "25.0.3"
-
     targetSdkVersion = 25
+    /*compileSdkVersion = 23       // depending on your sdk version
+    buildToolsVersion = "23.0.0" // depending on your build tools version
+    targetSdkVersion = 23        // depending on your sdk version*/
 
     versionCode = 800800
     versionName = "0.8.8"
