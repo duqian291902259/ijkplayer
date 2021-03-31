@@ -129,9 +129,29 @@ public class SampleMediaListFragment extends Fragment {
                 "    ]\n" +
                 "}";
 
-        mAdapter.addItem(manifest_string, "las test");
+        //回看url
+        String mobileUrl1 = "http://vapi.dev.cc.163.com/video_play_url_mobile/19270078?isfree=0&sid=3c30ddf4323f84a4&src=ccandroid&uid=19267270&urs=yd.04f834454cce4aaaa@163.com&h265=1&vbrmode=1&vbrname=ultra&version=10069&udp_identy=udp";
+        String mobileUrl = "http://cgi.v.cc.163.com/video_play_url_mobile/348355046?src=ccandroid&sid=3c30ddf4323f84a4&urs=yd.04f834454cce4aaaa@163.com&vbrmode=1&version=10069&isfree=0&vbrname=blueray&uid=375970346&udp_identy=udp&h265=1";
+
+        //live test
+        String testUrl3 = "http://udp.v.cc.163.pull.com/udppull/TEST34dec05a4da2fe9621340033?userGrpId=100366713&udp_uid=19267270&appId=100&pulladdr=192.168.229.168:8132,8186&cid=19213158";
+        String testUrl2 = "http://udp.v.cc.163.pull.com/udppull/TESTaa9332e31ca6d50221360991?userGrpId=100370165&udp_uid=19267270&appId=100&pulladdr=192.168.229.168:8133,8190";
+
+        //online
+        String testUrl = "http://udp.v.cc.163.pull.com/udppull/2fea3cbeb7d30971dd50268058795?wySecret=18be30684ce5f64eb405902d5b8b6515&wyTime=6063d628&appId=100&tc_flag=0&low_tc_ready=True&userGrpId=5791410&udp_uid=375970346&pulladdr=218.107.55.60:8125,8151&ccid=348355046&src=ccandroid&sid=3c30ddf4323f84a4";
+        //ok的
+        String testUrl4 = "http://112.91.133.137/pull.v.cc.163.com/pushstation/TESTa458eb230e70456c21341237.flv?wsSecret=9c3e94171d213a2b8cfc0ebcf28c28a4&wsTime=606332b6";
+
+        mAdapter.addItem(mobileUrl, "cc mobileUrl 11");
+
+        mAdapter.addItem(testUrl3, "testUrl333");
+
+        mAdapter.addItem(testUrl4, "cc live url4");
+
+
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8", "bipbop basic master playlist");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear1/prog_index.m3u8", "bipbop basic 400x300 @ 232 kbps");
+        mAdapter.addItem(manifest_string, "las test");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear2/prog_index.m3u8", "bipbop basic 640x480 @ 650 kbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear3/prog_index.m3u8", "bipbop basic 640x480 @ 1 Mbps");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear4/prog_index.m3u8", "bipbop basic 960x720 @ 2 Mbps");
