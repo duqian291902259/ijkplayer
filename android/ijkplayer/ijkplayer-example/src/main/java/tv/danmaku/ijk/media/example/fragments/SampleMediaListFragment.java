@@ -141,8 +141,8 @@ public class SampleMediaListFragment extends Fragment {
         String testUrl1 = "http://112.91.133.138/pull.v.cc.163.com/pushstation/aabc4998852645707d7f290361011tc1.flv?wsSecret=0c6d1671a8fcb188a567ab5234d017c3&wsTime=6065aa79";
         String testUrl2 = "http://112.91.133.174/pull.v.cc.163.com/pushstation/b4e2e07b6f107db0fab4260880153.flv?wsSecret=10a76673d09ff0c6d56c5e20781c36f3&wsTime=6065b228";
 
-        //mAdapter.addItem(mobileUrl, "cc mobileUrl 11");
 
+        //test cc
         mAdapter.addItem(testUrl1, "testUrl 111");
         mAdapter.addItem(testUrl2, "testUrl 222");
         mAdapter.addItem(testUrl3, "testUrl2333");
