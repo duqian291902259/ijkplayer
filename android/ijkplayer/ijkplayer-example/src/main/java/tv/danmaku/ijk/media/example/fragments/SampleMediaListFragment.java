@@ -133,14 +133,18 @@ public class SampleMediaListFragment extends Fragment {
         String mobileUrl = "http://cgi.v.cc.163.com/video_play_url_mobile/348355046?src=ccandroid&sid=3c30ddf4323f84a4&urs=yd.04f834454cce4aaaa@163.com&vbrmode=1&version=10069&isfree=0&vbrname=blueray&uid=375970346&udp_identy=udp&h265=1";
 
         //live test
-        String testUrl = "http://udp.v.cc.163.pull.com/udppull/b92970cce50d588e7a16280274871?wySecret=ba6ac4f2a55c70ad864c48f0bf26c87c&wyTime=606578c3&appId=100&tc_flag=0&low_tc_ready=True&userGrpId=6187262&udp_uid=374313062&pulladdr=101.71.153.61:8128,8162&ccid=358894743&src=ccandroid&sid=3c30ddf4323f84a4&abspts=1";
-        String testUrl2 = "http://videoms.cc.163.com/v1/vstream/ptsdomains?src=ccandroid&version=10068";
+        String testUrl11 = "http://udp.v.cc.163.pull.com/udppull/b92970cce50d588e7a16280274871?wySecret=ba6ac4f2a55c70ad864c48f0bf26c87c&wyTime=606578c3&appId=100&tc_flag=0&low_tc_ready=True&userGrpId=6187262&udp_uid=374313062&pulladdr=101.71.153.61:8128,8162&ccid=358894743&src=ccandroid&sid=3c30ddf4323f84a4&abspts=1";
+        String testUrl22 = "http://videoms.cc.163.com/v1/vstream/ptsdomains?src=ccandroid&version=10068";
         //ok的
         String testUrl4 = "http://112.91.133.137/pull.v.cc.163.com/pushstation/TESTa458eb230e70456c21341237.flv?wsSecret=9c3e94171d213a2b8cfc0ebcf28c28a4&wsTime=606332b6";
         String testUrl3 = "http://las-tech.org.cn/kwai/las-test_ld500d.flv";
+        String testUrl1 = "http://112.91.133.138/pull.v.cc.163.com/pushstation/aabc4998852645707d7f290361011tc1.flv?wsSecret=0c6d1671a8fcb188a567ab5234d017c3&wsTime=6065aa79";
+        String testUrl2 = "http://112.91.133.174/pull.v.cc.163.com/pushstation/b4e2e07b6f107db0fab4260880153.flv?wsSecret=10a76673d09ff0c6d56c5e20781c36f3&wsTime=6065b228";
 
         //mAdapter.addItem(mobileUrl, "cc mobileUrl 11");
 
+        mAdapter.addItem(testUrl1, "testUrl 111");
+        mAdapter.addItem(testUrl2, "testUrl 222");
         mAdapter.addItem(testUrl3, "testUrl2333");
 
         mAdapter.addItem(testUrl4, "cc live url4");
