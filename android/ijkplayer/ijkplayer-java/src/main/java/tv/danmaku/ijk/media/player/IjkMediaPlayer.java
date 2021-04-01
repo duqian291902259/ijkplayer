@@ -432,9 +432,9 @@ public final class IjkMediaPlayer extends AbstractMediaPlayer {
                     "async,cache,crypto,file,http,https,ijkhttphook,ijkinject,ijklivehook,ijklongurl,ijksegment,ijktcphook,pipe,rtp,tcp,tls,udp,ijkurlhook,data");
             }
         }
-        /*setOption(IjkMediaPlayer.OPT_CATEGORY_FORMAT, "protocol_whitelist",
+        setOption(IjkMediaPlayer.OPT_CATEGORY_FORMAT, "protocol_whitelist",
             "async,cache,crypto,file,http,https,ijkhttphook,ijkinject,ijklivehook,ijklongurl,ijksegment,ijktcphook,"
-                + "pipe,rtp,tcp,tls,udp,ijkurlhook,data");*/
+                + "pipe,rtp,tcp,tls,udp,ijkurlhook,data");
 
         setDataSource(path);
     }
