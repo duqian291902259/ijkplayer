@@ -129,6 +129,22 @@ public class SampleMediaListFragment extends Fragment {
                 "    ]\n" +
                 "}";
 
+        //回看url
+        String mobileUrl = "http://cgi.v.cc.163.com/video_play_url_mobile/348355046?src=ccandroid&sid=3c30ddf4323f84a4&urs=yd.04f834454cce4aaaa@163.com&vbrmode=1&version=10069&isfree=0&vbrname=blueray&uid=375970346&udp_identy=udp&h265=1";
+
+        //ok的
+        String testUrl4 = "http://112.91.133.137/pull.v.cc.163.com/pushstation/TESTa458eb230e70456c21341237.flv?wsSecret=9c3e94171d213a2b8cfc0ebcf28c28a4&wsTime=606332b6";
+        String testUrl3 = "http://las-tech.org.cn/kwai/las-test_ld500d.flv";
+        //live test
+        String testUrl1 = "rtmp://play-agora-test.hiiclub.live/live/l_a_563361986";
+        String testUrl2 = "http://play-agora-test.hiiclub.live/live/l_a_563361986.flv";
+
+        //test cc
+        mAdapter.addItem(testUrl1, "testUrl1");
+        mAdapter.addItem(testUrl2, "testUrl2");
+        mAdapter.addItem(testUrl3, "testUrl3");
+        mAdapter.addItem(testUrl4, "testUrl4");
+
         mAdapter.addItem(manifest_string, "las test");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8", "bipbop basic master playlist");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear1/prog_index.m3u8", "bipbop basic 400x300 @ 232 kbps");
